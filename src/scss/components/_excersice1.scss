@@ -1,0 +1,110 @@
+.testimonial {
+    margin: 0 auto;
+    max-width: 90%;
+    position: relative;
+
+    @include from(tablet) {
+        max-width: 700px;
+    }
+
+    @include from(desktop) {
+        max-width: 800px
+    }
+
+    &::before {
+        background: $tango;
+        border-radius: 10px;
+        content: "";
+        height: 8px;
+        left: 6%;
+        position: absolute;
+        top: 66%;
+        width: 8px;
+
+        @include from(tablet) {
+            left: 3.2%;
+            top: 90%;
+        }
+
+        @include from(desktop) {
+            left: 2.7%;
+            top: 90%;
+        }
+    }
+
+    &__wrapper {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 10px 0 50px;
+        position: relative;
+
+        @include from(tablet) {
+            justify-content: space-between;
+        }
+
+        &::before {
+            background: $tango;
+            content: "";
+            height: 60%;
+            left: 24px;
+            position: absolute;
+            top: 20px;
+            width: 2px;
+
+            @include from(tablet) {
+                height: 80%;
+            }
+        }
+
+        &-cta {
+            background: $havelock-blue;
+            border-radius: 3px;
+            color: $white;
+            font-size: size(12);
+            margin-top: 20px;
+            padding: 15px 35px;
+            text-transform: uppercase;
+
+            @include from(desktop) {
+                cursor: pointer;
+
+                &:hover {
+                    background: $pacific-blue;
+                }
+            }
+        }
+
+        &--content {
+            color: $mine-shaft;
+            line-height: size(22);
+            position: relative;
+
+            @include from(tablet) {
+                flex-basis: 70%;
+            }
+
+            &::before {
+                background: $tango;
+                border-radius: 20px;
+                color: $white;
+                content: "''";
+                font-size: size(40);
+                height: 13px;
+                left: -40px;
+                padding-top: 17px;
+                position: absolute;
+                text-align: center;
+                width: 30px;
+            }
+
+            &__author {
+                font-weight: 500;
+            }
+
+            &__quote {
+                font-weight: 300;
+            }
+        }
+    }
+}

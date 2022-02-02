@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+
+  <title>Candidate Exercise</title>
+</head>
+
+<body>
+  <div class="exercise-header">
+    <h2>Exercise 1 - Testimonial Block</h2>
+  </div>
+
+  <div class="testimonial">
+    <div class="testimonial__wrapper">
+      <div class="testimonial__wrapper--content">
+        <p class="testimonial__wrapper--content__quote">Gingerbread tart cupcake cake muffin cookie liquorice tiramisu. Toffee cupcake cake cake croissant icing carrot cake cookie. Dessert chocolate bar apple pie sesame snaps liquorice carrot cake cookie danish.</p>
+        <span class="testimonial__wrapper--content__author">Indiana Jones, Archaeologist</span>
+      </div>
+      <a class="testimonial__wrapper-cta">Tell Me More</a>
+    </div>
+  </div>
+
+  <div class="exercise-header">
+    <h2>Exercise 2 - Filterable Content</h2>
+  </div>
+
+  <div class="items">
+    <div class="items__filters">
+      <div class="items__filters-dropdown">
+        <div class="items__filters-dropdown--genre select">
+          <div class="items__filters-dropdown--genre__title">
+            GENRE
+          </div>
+          <div id="genre-filter" class="items__filters-dropdown--genre__inner inner__content">
+            <i class="arrow arrow--up"></i>
+          </div>
+          <i class="arrow arrow--down"></i>
+        </div>
+        <div class="items__filters-dropdown--genre select">
+          <div class="items__filters-dropdown--year__title">
+            YEAR
+          </div>
+          <div id="year-filter" class="items__filters-dropdown--year__inner inner__content">
+            <i class="arrow arrow--up"></i>
+          </div>
+          <i class="arrow arrow--down"></i>
+        </div>
+      </div>
+      <div class="items__filters-search">
+        <input type="text" placeholder="Search...">
+      </div>
+      <div class="items__filters-radio">
+        <form name="typeForm">
+          <div>
+            <input type="radio" id="movies" name="type" value="movies">
+            <label for="movies">Movies</label>
+          </div>
+          <div>
+            <input type="radio" id="books" name="type" value="books">
+            <label for="books">Books</label>
+          </div>
+        </form>
+      </div>
+      <div class="items__filters-clear" id="clear-filters" tabindex="0" role="button" aria-pressed="false">
+        Clear Filters
+      </div>
+    </div>
+    <ul id="result-list" class="items__list"></ul>
+  </div>
+
+</body>
+
+<footer>
+  <script type="module" src="../js/index.js"></script>
+</footer>
+</html>
